@@ -52,4 +52,22 @@ con.query('SELECT * from users', (err, rows, fields) => {
 })
 ```
 
+#APIS
+//get all customers 
+GET http://localhost:8080/api/customers/get-all-customers
+
+//add new customer
+POST http://localhost:8080/api/customers/add-new-customer (pass new record as json)
+
+//update customer
+POST http://localhost:8080/api/customers/update-customer (pass record as json)
+
+//delete customer
+POST http://localhost:8080/api/customers/delete-customer (pass record id as json)
+
 #front-end part in front_end folder
+```
+cd front_end
+npm i
+npm run serve
+```

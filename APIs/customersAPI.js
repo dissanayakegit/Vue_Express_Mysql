@@ -16,6 +16,7 @@ Route.get('/get-all-customers', (req, res) => {
 
 //add new customer
 Route.post('/add-new-customer', (req, res) => {
+    console.log(req.body);
     let query = `INSERT INTO customers (name, address)
     VALUES ('${req.body.name}', '${req.body.address}')`;
 

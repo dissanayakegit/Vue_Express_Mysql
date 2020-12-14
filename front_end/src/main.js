@@ -10,6 +10,9 @@ const axios = axiosApi.create({
 
 Vue.prototype.axios = axios;
 
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap';
+
 Vue.config.productionTip = false
 
 new Vue({
